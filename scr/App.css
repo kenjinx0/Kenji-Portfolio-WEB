@@ -1,0 +1,73 @@
+:root {
+  /* Theme Colors */
+  --white-theme-primary: #ffffff;
+  --white-theme-secondary: #e6e6fa;
+  --blue-theme-primary: #add8e6;
+  --blue-theme-secondary: #9370db;
+  --red-theme-primary: #ffcccb;
+  --red-theme-secondary: #800000;
+  --dark-theme-primary: #1a1a1a;
+  --dark-theme-secondary: #333333;
+}
+
+body {
+  margin: 0;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.moon {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.interactive-element {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.interactive-element:hover {
+  transform: scale(1.05);
+  padding: 1.2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.social-icon {
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.resume-section {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+/* Theme-specific styles */
+.white-theme {
+  background: linear-gradient(135deg, var(--white-theme-primary), var(--white-theme-secondary));
+}
+
+.blue-theme {
+  background: linear-gradient(135deg, var(--blue-theme-primary), var(--blue-theme-secondary));
+}
+
+.red-theme {
+  background: linear-gradient(135deg, var(--red-theme-primary), var(--red-theme-secondary));
+}
+
+.dark-theme {
+  background: linear-gradient(135deg, var(--dark-theme-primary), var(--dark-theme-secondary));
+}
